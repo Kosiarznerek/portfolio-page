@@ -1,0 +1,34 @@
+﻿@font-face {
+    font-family: 'AtariFont';
+    src: url('PressStart2P.ttf') format('truetype');
+}
+
+#game {
+    width: 672px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+#gameCanvas {
+    padding-top: 24px;
+}
+
+#gameStats {
+    font-family: AtariFont;
+    margin-left: 52px;
+    margin-top: 10px;
+}
+
+    #gameStats div {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        color: #a1eeff;
+        font-size: 18px;
+    }
+
+        #gameStats div span {
+            color: #418edd;
+            display: inline-block;
+        }

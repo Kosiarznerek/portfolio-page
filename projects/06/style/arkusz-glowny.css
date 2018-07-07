@@ -1,0 +1,200 @@
+/*=========================================================================*/
+@font-face {
+	font-family: PressStart2p;
+	src: url(../fonts/PressStart2P.ttf) format("truetype");
+}
+/*=========================================================================*/
+html, body{
+    font-family: PressStart2p;
+    min-width: 960px;
+    min-height: 500px; 
+}
+/*=========================================================================*/
+#pojemnik h1{
+    color: rgb(193,193,193);
+}
+/*=========================================================================*/
+#pojemnik{
+    width: 930px;
+    /*height: 400px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: rgb(50,50,50);
+    padding: 30px;
+}
+/*=========================================================================*/
+#pojemnik #obcenaLokacjaNapis{
+    margin-bottom: 30px;
+}
+/*=========================================================================*/
+#pojemnik #obcenaLokacjaPojemnik{
+    width: 316px;
+    height: 197px;
+    float: left;
+    border: 2px solid rgb(188,175,179);
+    position: relative;
+}
+
+#pojemnik #obcenaLokacjaObraz{
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 316px;
+    height: 197px;
+    z-index: 1;
+    /*border: 2px solid rgb(188,175,179);*/
+    /*float: left;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#pojemnik #nowaObecnaLokalizacjaObraz{
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 316px;
+    /*height: 197px;*/
+    z-index: 2;
+    /*border: 2px solid rgb(188,175,179);*/
+    /*float: left;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*=========================================================================*/
+#pojemnik #kompas{
+    background-image: url(../img/kompas/kompas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 316px;
+    height: 197px;
+    float: right;
+    position: relative;
+}
+
+#pojemnik #kompas .literkaKompasu{
+    position: absolute;
+}
+
+#pojemnik #kompas #kompasN{
+    left: 141px;
+    top: 16px;
+}
+
+#pojemnik #kompas #kompasS{
+    left: 149px;
+    bottom: 16px;
+}
+
+#pojemnik #kompas #kompasE{
+    right: -3px;
+    top: 68px;
+}
+
+#pojemnik #kompas #kompasW{
+    left: 0;
+    top: 68px;
+}
+/*=========================================================================*/
+.napisyInformacyjne{
+    display: block;
+    clear: both;
+}
+
+#pojemnik #wKtorymKierunkuMogeIsc{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+#pojemnik #coWidze{
+    margin-bottom: 10px;
+}
+/*=========================================================================*/
+#pojemnik #inputRozmiar{
+    position: relative;
+    left: 0;
+    top: 0;
+    color: transparent;
+}
+
+#pojemnik #coTerazNapis{
+    margin-top: 30px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+#pojemnik #coTerazNapis p{
+    width: 593px;
+    text-align: justify;
+}
+
+#pojemnik #coTerazInput{
+    border: none;
+    font-family: PressStart2p;
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background: transparent;
+    color: rgb(50,50,50);
+    text-shadow: 0px 0px 0px rgb(193,193,193);
+    -webkit-text-fill-color: transparent;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#pojemnik #kursor{
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    font-size: 18px;
+    background-color: rgb(193,193,193);
+    margin-bottom: 0px;
+    color: rgb(50,50,50);
+    margin-left: 1px;
+}
+/*=========================================================================*/
+#pojemnik #czolowkaTlo{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgb(1,44,0);
+}
+
+#pojemnik #czolowkaImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 11;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+/*=========================================================================*/
+#pojemnik #wygrales{
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/wygrana.jpg);
+    display: none;
+}
+/*=========================================================================*/

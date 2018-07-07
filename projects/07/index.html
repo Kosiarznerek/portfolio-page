@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Empty title</title>
+    <meta charset="utf-8" />
+
+    <!-- CSS -->
+    <link href="style/normalize.css" rel="stylesheet" />
+    <link href="style/mainStyle.css" rel="stylesheet" />
+
+    <!-- GENERAL SCRIPTS -->
+    <script src="scripts/generalLibrary.js"></script>
+    <script src="scripts/canvasLibrary.js"></script>
+
+    <!-- PRE-LOADING IMAGES -->
+    <script src="scripts/preloadImages.js"></script>
+
+    <!-- LEVELS INFORMATIONS -->
+    <script src="scripts/levels/level01.js"></script>
+    <script src="scripts/levels/level02.js"></script>
+
+    <!-- GAME OBJECTS -->
+    <script src="scripts/CustomShape.js"></script>
+    <script src="scripts/Obstacle.js"></script>
+    <script src="scripts/Bullet.js"></script>
+    <script src="scripts/Opponent.js"></script>
+    <script src="scripts/Plane.js"></script>
+
+    <!-- LEVELS CHANGER -->
+    <script src="scripts/levels/levelChanger.js"></script>
+
+    <!-- SPACE INVASION -->
+    <script src="scripts/SpaceCraft.js"></script>
+    <script src="scripts/spaceInvasion.js"></script>
+
+    <!-- MESSAGES -->
+    <script src="scripts/Messages.js"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <div id="game">
+        <img src="graphics/logo.png" id="gameLogo" />
+        <div id="gameViev"></div>
+        <div id="statistics">
+            <div id="fuelState"></div>
+            <div id="lifes">
+                <!--<p class="brown">P=</p>
+                <p class="yellow" id="lifesAmount"></p>-->
+            </div>
+            <div id="opponents">
+                <!--<p class="brown">EP=</p>
+                <p class="yellow" id="opponentsAmount"></p>-->
+            </div>
+            <div id="topScore">
+                <!--<p class="brown">TOP=</p>
+                <p class="yellow" id="topScoreAmount"></p>-->
+            </div>
+            <div id="currentScore">
+                <!--<p class="brown">1UP</p>
+                <p class="yellow" id="currentScoreAmount"></p>-->
+            </div>
+        </div>
+        <div id="messages"></div>
+    </div>
+
+    <!-- DEBUGGING STUFF -->
+    <div id="debugging">
+        BULLETS COLLISION DETECTION LINES: <input type="checkbox" id="bulletColliionDetection" /><br/>
+        PLANE COLLISION DETECTION LINES: <input type="checkbox" id="planeColliionDetection" />
+    </div>
+
+</body>
+</html>

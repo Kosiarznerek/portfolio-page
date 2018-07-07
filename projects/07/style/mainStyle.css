@@ -1,0 +1,137 @@
+﻿#debugging {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial;
+} 
+
+@font-face {
+    font-family: 'NiseZaxxon';
+    src: url('NiseZaxxon.ttf') format('truetype');
+}
+
+html, body {
+    font-family: NiseZaxxon;
+}
+
+#game {
+    width: 672px;
+    height: 435px;
+    background-color: #0840d4;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+}
+
+#gameLogo {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    height: 435px;
+    width: 672px;
+}
+
+#statistics {
+    font-size: 16px;
+}
+    #statistics .brown {
+        color: #5a060c;
+        display: inline-block;
+    }
+    #statistics .yellow {
+        color: #ffb263;
+        display: inline-block;
+    }
+
+#gameViev {
+    display: inline-block;
+}
+
+#fuelState p {
+    display: inline-block;
+    color: #ffb263;
+    padding: 5px;
+}
+
+#fuelState #fuelSegmentsHolder {
+    display: inline-block;
+    width: 256px;
+    height: 16px;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+    #fuelState #fuelSegmentsHolder .s01 {
+        height: 16px;
+        background-color: #5a060c;
+        display: inline-block;
+        width: 4px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #fuelState #fuelSegmentsHolder .s02 {
+        height: 12px;
+        background-color: #ffb263;
+        display: inline-block;
+        width: 4px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #fuelState #fuelSegmentsHolder .s03 {
+        height: 8px;
+        background-color: #5a060c;
+        display: inline-block;
+        width: 4px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #fuelState #fuelSegmentsHolder .s04 {
+        height: 4px;
+        background-color: #ffb263;
+        display: inline-block;
+        width: 4px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+#fuelState #fuelWarningBar {
+    background: #5a060c;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 16px;
+}
+
+
+#lifes, #opponents, #topScore {
+    display: inline-block;
+}
+
+#messages {
+    position: relative;
+    left: 0;
+    top: -58px;
+    text-align: center;
+    display: none;
+    background-color: #0840d4;
+    height: 60px;
+}
+
+    #messages p {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffb263;
+    }
