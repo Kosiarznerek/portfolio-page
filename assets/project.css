@@ -1,0 +1,15 @@
+.navbar-default {
+    border-color: transparent;
+    -webkit-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+    background-image: url(images/pages/wave-header.svg);
+    background-position: 0 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.header-spacer{
+    height: 135px;
+}
