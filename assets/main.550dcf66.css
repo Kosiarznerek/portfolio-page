@@ -3771,7 +3771,7 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #ddd
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -4849,7 +4849,7 @@ button.close {
 }
 
 .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
-    background-color: #888
+    background-color: #fff
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
