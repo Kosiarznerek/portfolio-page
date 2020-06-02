@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pl-PL">
+
+<head>
+
+    <!-- Metas -->
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="CaliberThemes" name="author"/>
+
+    <!-- Links -->
+    <link href="../images/favicon.png" rel="icon" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/ionicons.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/cubeportfolio.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Document Title -->
+    <title>Damian Bąbka - strona portfolio</title>
+
+</head>
+<body>
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header class="standard" id="header">
+        <div class="header-wrapper">
+            <div class="container">
+                <div id="logo">
+                    <a href="../index.html">Damian Bąbka</a>
+                </div>
+                <span id="menu-trigger"><span></span></span>
+                <nav id="main-menu">
+                    <ul>
+                        <li>
+                            <a href="../index.html">
+                                <div>GŁÓWNA</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../about.html">
+                                <div>O MNIE</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper">
+
+        <!-- Main Wrapper -->
+        <div id="main-wrapper">
+            <div class="project-single margin-top-100 margin-top-50-xs">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Title -->
+                        <div class="col-sm-12">
+                            <div class="project-title">
+                                <h1>Chata u Kowalików</h1>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="col-sm-12">
+                            <div class="row d-sm-flex">
+                                <div class="col-sm-12">
+                                    <div class="project-desc">
+                                        <p>
+                                            Prosta strona internetowa typy "wizytówka" wykonana na zlecenie klienta.
+                                            Została oparta o podstawowe technologie webowe: HTML, CSS, JavaScript,
+                                            JQuery. Użyte zdjęcia i grafiki zostały dostarczone przez zleceniodawcę.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                                    <div class="button solid">
+                                        <a target="_blank" href="http://chataukowalikow.pl/">Zobacz projekt</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gallery -->
+                        <div class="col-sm-12 margin-top-20">
+                            <div class="cbp" data-gaphorizontal="30" data-gapvertical="30" data-large-desktop="3"
+                                 data-layoutmode="grid" data-medium-desktop="3" data-tablet="2"
+                                 id="portfolio-container">
+
+                                <script>
+
+                                    // All photos
+                                    const photos = [
+                                        'chataukowalikow/1.png',
+                                        'chataukowalikow/2.png',
+                                        'chataukowalikow/3.png',
+                                        'chataukowalikow/4.png',
+                                        'chataukowalikow/5.png',
+                                        'chataukowalikow/6.png'
+                                    ];
+
+                                    // Generate content
+                                    const content = photos
+                                        .map(imageSrc => `
+                                            <div class="cbp-item">
+                                                <div class="cbp-item-wrapper">
+                                                    <a href="../images/portfolio/${imageSrc}"
+                                                       class="cbp-caption cbp-lightbox">
+                                                        <div class="cbp-caption-defaultWrap">
+                                                            <img src="../images/portfolio/${imageSrc}">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        `)
+                                        .join('');
+
+                                    // Print
+                                    document.getElementById('portfolio-container').innerHTML = content;
+
+                                </script>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Wrapper Ends -->
+
+        <!-- Footer -->
+        <footer class="standard" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="copyrights">
+                            <p>&COPY; 2019 Damian Bąbka</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="footer-socials">
+                            <a href="https://github.com/Kosiarznerek" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+
+    </div>
+    <!-- Content Wrapper Ends -->
+
+</div>
+<!-- Page Wrapper Ends -->
+
+<!-- Scripts -->
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/superfish.js"></script>
+<script src="../js/cubeportfolio.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/main.js"></script>
+<!-- Scripts Ends -->
+</body>
+
+</html>
